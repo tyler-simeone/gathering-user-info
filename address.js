@@ -1,11 +1,16 @@
-const saveBttn = document.querySelector("#saveEntry");
-
 const container = document.querySelector("#addressList");
 
 const onClick = () => {
     const name = document.querySelector("#fullName");
     const address = document.querySelector("#address");
-    container.innerHTML = `${name.value} ${address.value}`;
+    container.innerHTML += `
+        <section>
+            <h1>${name.value}</h1>
+            <div>${address.value}</div>
+        </section>
+    `
 }
 
-saveBttn.addEventListener("click", onClick);
+document.querySelector("#saveEntry").addEventListener("click", onClick);
+
+// ${name.value}: ${address.value}

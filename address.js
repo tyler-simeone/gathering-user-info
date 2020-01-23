@@ -13,4 +13,3 @@ const onClick = () => {
 
 document.querySelector("#saveEntry").addEventListener("click", onClick);
 
-// ${name.value}: ${address.value}
